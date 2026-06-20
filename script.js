@@ -28,5 +28,5 @@ form.addEventListener("submit", (event) => {
   const data = new FormData(form);
   const name = data.get("name") || "Customer";
   const device = data.get("device") || "device";
-  note.textContent = `${name}, your ${device} service request is ready. Please call or email the store to confirm your appointment.`;
+  note.textContent = `${name}, your ${device} service request is ready. Please call or message Zalo 0865 158 676 to confirm your appointment.`;
 });

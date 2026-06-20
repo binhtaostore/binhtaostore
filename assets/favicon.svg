@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Binh Tao Store">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bình Táo Store">
   <rect width="64" height="64" rx="14" fill="#050505"/>
   <circle cx="32" cy="32" r="22" fill="#fff"/>
-  <text x="32" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#050505">BT</text>
+  <path d="M32 15c3 0 5 1 7 2-2 3-4 5-7 6-2-3-2-6 0-8Z" fill="#050505"/>
+  <path d="M32 23c9 0 16 7 16 16 0 6-3 11-8 14-2 1-4 1-6 2v-9h4c3 0 6-3 6-6s-3-6-6-6H23v21c-2-1-4-1-6-2-5-3-8-8-8-14 0-9 7-16 16-16h7Z" fill="#050505"/>
+  <path d="M28 34h10c3 0 6 3 6 6s-3 6-6 6H28V34Zm5 5v2h5c1 0 1-1 1-1s0-1-1-1h-5Z" fill="#fff"/>
 </svg>

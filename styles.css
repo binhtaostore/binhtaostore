@@ -81,17 +81,13 @@ img {
   font-weight: 700;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-logo {
   width: 36px;
   height: 36px;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: #fff;
-  color: #050505;
-  font-size: 0.75rem;
-  letter-spacing: 0;
+  object-fit: cover;
 }
 
 .site-nav {
@@ -222,6 +218,10 @@ h3 {
   color: #fff;
 }
 
+.quick-actions {
+  max-width: 620px;
+}
+
 .hero-media {
   margin: 0;
   border: 1px solid var(--line);
@@ -272,6 +272,24 @@ h3 {
   color: var(--muted);
 }
 
+.address-strip {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(var(--max), calc(100% - 32px));
+  margin: 42px auto 0;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.address-strip h2 {
+  max-width: 840px;
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 4.8rem);
+}
+
 .section {
   padding: 110px 0 0;
 }
@@ -293,7 +311,8 @@ h3 {
 
 .service-card,
 .review-card,
-.contact-form {
+.contact-form,
+.business-grid article {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: linear-gradient(180deg, var(--panel-2), var(--panel));
@@ -396,6 +415,31 @@ h3 {
 .review-card strong {
   display: block;
   margin-top: 24px;
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.business-grid article {
+  display: grid;
+  gap: 14px;
+  min-height: 150px;
+  padding: 24px;
+}
+
+.business-grid span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.business-grid strong {
+  font-size: 1.08rem;
+  line-height: 1.45;
 }
 
 .contact-section {
@@ -502,7 +546,8 @@ textarea {
 
   .hero,
   .split-section,
-  .contact-section {
+  .contact-section,
+  .business-grid {
     grid-template-columns: 1fr;
   }
 
@@ -524,6 +569,7 @@ textarea {
   .site-header,
   .hero,
   .metrics,
+  .address-strip,
   .section,
   .contact-section,
   .site-footer {
@@ -534,6 +580,11 @@ textarea {
   .reviews,
   .service-grid {
     grid-template-columns: 1fr;
+  }
+
+  .address-strip {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .metrics div {

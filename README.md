@@ -2,6 +2,12 @@
 
 A deployment-ready static website for Binh Tao Store with a black-and-white Apple-inspired design, responsive layout, service sections, price list, reviews, contact form, and SEO metadata.
 
+Business details:
+
+- Phone/Zalo: 0865 158 676
+- Address: Xã Hiệp Hòa, tỉnh Bắc Ninh, Việt Nam
+- Facebook: https://www.facebook.com/share/14gcstJP42b/?mibextid=wwXIfr
+
 ## Local Preview
 
 Open `index.html` directly in a browser, or serve the folder with any static server:
