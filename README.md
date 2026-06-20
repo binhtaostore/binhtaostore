@@ -12,7 +12,15 @@ python -m http.server 4173
 
 ## Deploy
 
-The site can be deployed to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or any static host. Use the repository root as the publish directory.
+The site deploys automatically to GitHub Pages through GitHub Actions whenever changes are pushed to `main`.
+
+Production URL:
+
+```text
+https://binhtaostore.github.io/binhtaostore/
+```
+
+It can also be deployed to Netlify, Vercel, Cloudflare Pages, or any static host. Use the repository root as the publish directory.
 
 ## Customize
 
