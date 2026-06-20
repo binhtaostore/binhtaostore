@@ -1,8 +1,9 @@
+document.documentElement.classList.add("js");
+
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const menuButton = document.querySelector("[data-menu-button]");
-const form = document.querySelector(".contact-form");
-const note = document.querySelector("[data-form-note]");
+const revealItems = document.querySelectorAll(".reveal");
 
 const syncHeader = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 12);
@@ -23,10 +24,20 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const name = data.get("name") || "Customer";
-  const device = data.get("device") || "device";
-  note.textContent = `${name}, your ${device} service request is ready. Please call or message Zalo 0865 158 676 to confirm your appointment.`;
-});
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+}
