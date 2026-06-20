@@ -1,16 +1,19 @@
-## Hi there 👋
+# Binh Tao Store Website
 
-<!--
-**binhtaostore/binhtaostore** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A deployment-ready static website for Binh Tao Store with a black-and-white Apple-inspired design, responsive layout, service sections, price list, reviews, contact form, and SEO metadata.
 
-Here are some ideas to get you started:
+## Local Preview
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Open `index.html` directly in a browser, or serve the folder with any static server:
+
+```bash
+python -m http.server 4173
+```
+
+## Deploy
+
+The site can be deployed to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or any static host. Use the repository root as the publish directory.
+
+## Customize
+
+Update the phone number, email address, final service prices, and canonical URL in `index.html` before publishing to a production domain.
