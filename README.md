@@ -4,7 +4,7 @@ A deployment-ready static website for Binh Tao Store with a black-and-white Appl
 
 Business details:
 
-- Phone/Zalo: 0865 158 676
+- Phone/Zalo: 0865 158 979
 - Address: Xã Hiệp Hòa, tỉnh Bắc Ninh, Việt Nam
 - Facebook: https://www.facebook.com/share/14gcstJP42b/?mibextid=wwXIfr
 
