@@ -622,3 +622,102 @@ h3 {
     flex-wrap: wrap;
   }
 }
+
+/* Mô tả dịch vụ, thu mua và nút liên hệ cố định */
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+.service-grid.detailed .service-card {
+  align-content: start;
+  min-height: 220px;
+}
+
+.service-grid.detailed .service-card h3 {
+  margin: 28px 0 10px;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.highlight-card p {
+  color: #444;
+}
+
+.section-heading .address-actions {
+  margin-top: 26px;
+}
+
+.floating-contact {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+  display: flex;
+  gap: 10px;
+}
+
+.floating-contact a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-weight: 780;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+  transition: transform 180ms ease;
+}
+
+.floating-contact a:hover {
+  transform: translateY(-2px);
+}
+
+.floating-call {
+  background: #fff;
+  color: #050505;
+}
+
+.floating-zalo {
+  background: #0068ff;
+  color: #fff;
+}
+
+@media (max-width: 680px) {
+  body {
+    padding-bottom: 76px;
+  }
+
+  .floating-contact {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    gap: 8px;
+    padding: 10px 11px calc(10px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--line);
+    background: rgba(5, 5, 5, 0.94);
+    backdrop-filter: blur(18px);
+  }
+
+  .floating-contact a {
+    flex: 1;
+    gap: 6px;
+    padding: 0 8px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    box-shadow: none;
+  }
+
+  .floating-contact .floating-call {
+    flex: 1.5;
+  }
+
+  .service-grid.detailed .service-card {
+    min-height: auto;
+  }
+}
